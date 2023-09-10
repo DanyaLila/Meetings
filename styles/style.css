@@ -22,12 +22,25 @@ img {
     padding: 10px 32px 20px;
     justify-content: space-around;
     align-items: baseline;
-    background-color: rgba(56, 55, 55, 0.4);
+    align-items: center;
 }
 
 .logo {
     display: flex;
+    align-items: center;
+}
+.logo h3 {
+    font-size: 26px;
     font-weight: 800;
+    background: linear-gradient(
+        45deg,
+        #0000ff 25%,
+        #0000ff 55%,
+        #800080 55%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 20px;
 }
 .logo-heart {
     background-image: url(../logo/heart_logo.png);
@@ -37,7 +50,7 @@ img {
 
 
 .nav-link {
-    color:wheat;
+    color:rgb(0, 0, 0);
     font-weight: 600;
     transition: all 0.3s ease-in;
     -webkit-transition:0.4s;
@@ -45,10 +58,9 @@ img {
     transition-delay: 0.1s;
 }
 .nav-link:hover {
-    color:rgb(248, 112, 135);
+    color: #00bfff;
     transition-timing-function: ease;
     transition-delay: 0.1s;
-    text-decoration: underline;
 }
 
 .btn-get-started {
@@ -64,36 +76,35 @@ img {
 
 .btn-get-started:hover {
     color: black;
-    background-color: pink;
+    background-color: #00bfff;
 }
 
 /* Header */
 
 .header-conteiner {
-    height: 110vh;
+    margin: 0;
+    height: 80vh;
+    background-color: rgb(243, 237, 227);
 }
 
 .title-text {
-    background: linear-gradient(
+    /* background: linear-gradient(
         45deg,
-        red 23%,
-        orange 23%,
-        orange 35%,
-        #ffff00 35%,
-        #ffff00 45%,
-        #008000 45%,
-        #008000 55%,
-        #00bfff 55%,
-        #00bfff 65%,
-        #0000ff 65%,
-        #0000ff 75%,
-        #800080 75%
+       black 27%,
+       gray 37%,
+       gray 67%,
+       wheat 77%
     );
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: #311e54;
 }
 
 .header-zag h1 {
     font-weight: 800;
-    font-size: 76px;
+    font-size: 46px;
+}
+.header-zag p {
+    font-weight: 600;
+    color: #667085;
 }

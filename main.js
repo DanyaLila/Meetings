@@ -1,7 +1,7 @@
-$(window).on('load', function(){
+// $(window).on('load', function(){
  
-    // Vide.js - video background
-    $('#header-conteiner').vide('./navbar_vid/i_love_you', {
-        bgcolor: '#52827f'
-    })
-});
+//     // Vide.js - video background
+//     $('#header-conteiner').vide('./navbar_vid/wedding_by_the_beach', {
+//         bgcolor: '#52827f'
+//     })
+// });
