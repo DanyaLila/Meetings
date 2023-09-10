@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar */
+
+.nav-bar {
+    display: flex;
+    padding: 10px 32px 20px;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: rgba(56, 55, 55, 0.4);
+}
+
+.logo {
+    display: flex;
+    font-weight: 800;
+}
+.logo-heart {
+    background-image: url(../logo/heart_logo.png);
+    height: 64px;
+    width: 64px;
+}
+
+
+.nav-link {
+    color:wheat;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    -webkit-transition:0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+}
+.nav-link:hover {
+    color:rgb(248, 112, 135);
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+    text-decoration: underline;
+}
+
+.btn-get-started {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 15px;
+    border: 0px solid black;
+    border-radius: 50px;
+    background-color: #F2F4F7;
+    transition: all 0.3s ease-in;
+}
+
+.btn-get-started:hover {
+    color: black;
+    background-color: pink;
+}
+
+/* Header */
+
+.header-conteiner {
+    height: 110vh;
+}
+
+.title-text {
+    background: linear-gradient(
+        45deg,
+        red 23%,
+        orange 23%,
+        orange 35%,
+        #ffff00 35%,
+        #ffff00 45%,
+        #008000 45%,
+        #008000 55%,
+        #00bfff 55%,
+        #00bfff 65%,
+        #0000ff 65%,
+        #0000ff 75%,
+        #800080 75%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-zag h1 {
+    font-weight: 800;
+    font-size: 76px;
+}
