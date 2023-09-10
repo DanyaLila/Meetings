@@ -117,7 +117,6 @@ img {
 
   .swiper-slide {
     text-align: center;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,3 +133,16 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .swiper-button-next {
+    background-color: wheat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+  }
+  .swiper-button-prev {
+    background-color: wheat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+  }
+  
