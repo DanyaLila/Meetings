@@ -28,12 +28,11 @@
     <!-- Styles -->
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
 
     <!-- JS -->
     <script src="libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="libs/vid/jquery.vide.min.js"></script>
-
-    <script src="main.js"></script>
 
     <!-- Icon -->
 
@@ -50,121 +49,88 @@
     
 
     <title>Mistery acquaintance</title>
-
 </head>
-
 <body>
 
-    <!-- Navbar -->
-
-    <div class="nav-bar" id="nav-bar">
-                
-        <div class="logo">
-        <span class="logo-heart"></span>
-        <h3>Mistery acquaintance</h3>
-        </div>
-
-        <div class="nav-items">
-            <ul class="nav nav-underline">
-                <li class="nav-item">
-                <a class="nav-link" href="#header">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#h-container">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#bloks">Services</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#bloks">Company</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#bloks">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#footer-contacts">Contact</a>
-                </li>
-                <button class="nav-link btn" data-bs-toggle="dropdown" aria-expanded="false">
-                    Language
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item nav-link" href="#">Ukr</a></li>
-                    <li><a class="dropdown-item nav-link" href="#">Eng</a></li>
-                    <li><a class="dropdown-item nav-link" href="#">Rus</a></li>
-                </ul>
-            </ul>
-        </div>
-
-
-        <!-- <div class="button-start">
-            <a href="#footer-foarm" class="btn-get-started">Get Started 
-                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="fi-sr-arrow-small-right 1" clip-path="url(#clip0_774_58)">
-                    <path id="Vector" d="M10.5458 3.14384L7.85625 0.454345C7.64521 0.243399 7.35901 0.12493 7.06061 0.125C6.76222 0.12507 6.47607 0.243674 6.26513 0.45472C6.05418 0.665766 5.93571 0.951966 5.93578 1.25036C5.93585 1.54875 6.05446 1.8349 6.2655 2.04584L8.09475 3.87509H1.5C1.20163 3.87509 0.915484 3.99362 0.704505 4.2046C0.493527 4.41558 0.375 4.70173 0.375 5.00009C0.375 5.29846 0.493527 5.58461 0.704505 5.79559C0.915484 6.00657 1.20163 6.12509 1.5 6.12509H8.09475L6.2655 7.95434C6.05446 8.16529 5.93585 8.45144 5.93578 8.74983C5.93571 9.04822 6.05418 9.33442 6.26513 9.54547C6.47607 9.75651 6.76222 9.87512 7.06061 9.87519C7.35901 9.87526 7.64521 9.75679 7.85625 9.54584L10.5458 6.85634C11.0372 6.36357 11.3131 5.69603 11.3131 5.00009C11.3131 4.30416 11.0372 3.63662 10.5458 3.14384Z" fill="#101828"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_774_58">
-                    <rect width="12" height="10" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-            </a>
-        </div> -->
-    </div>
-
-   
-
-    <!-- Header -->
-
-        <div class="header-conteiner" id="header-conteiner">
-
-            <div class="header-main-content">
-                <div class="header-zag">
-                    <h1 class="text-color">
-                       <span class="title-text"> March. Chat. Date.</span>
-                    </h1>
-                    <p>With 70+ billion matches to date, Mistery acquaintance® <br> is the top free dating app,
-                        and the best place to meet new <br> people. Are you looking for true love? 
-                        An open relationship? <br> Are you looking to get out there and find a date, 
-                        or do you <br> just want to make friends and chat? With Mistery acquaintance,<br>  
-                        you can meet local people everywhere and get the best out of <br> your dating experience.</p>
-                </div>
-
-                <div class="button-start">
-                    <a href="#footer-foarm" class="btn-get-started">Get Started 
-                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="fi-sr-arrow-small-right 1" clip-path="url(#clip0_774_58)">
-                            <path id="Vector" d="M10.5458 3.14384L7.85625 0.454345C7.64521 0.243399 7.35901 0.12493 7.06061 0.125C6.76222 0.12507 6.47607 0.243674 6.26513 0.45472C6.05418 0.665766 5.93571 0.951966 5.93578 1.25036C5.93585 1.54875 6.05446 1.8349 6.2655 2.04584L8.09475 3.87509H1.5C1.20163 3.87509 0.915484 3.99362 0.704505 4.2046C0.493527 4.41558 0.375 4.70173 0.375 5.00009C0.375 5.29846 0.493527 5.58461 0.704505 5.79559C0.915484 6.00657 1.20163 6.12509 1.5 6.12509H8.09475L6.2655 7.95434C6.05446 8.16529 5.93585 8.45144 5.93578 8.74983C5.93571 9.04822 6.05418 9.33442 6.26513 9.54547C6.47607 9.75651 6.76222 9.87512 7.06061 9.87519C7.35901 9.87526 7.64521 9.75679 7.85625 9.54584L10.5458 6.85634C11.0372 6.36357 11.3131 5.69603 11.3131 5.00009C11.3131 4.30416 11.0372 3.63662 10.5458 3.14384Z" fill="#101828"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_774_58">
-                            <rect width="12" height="10" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                    </a>
+    <header>
+        <a href="#" class="brand">M.S.</a>
+        <div class="menu-btn">
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Explore</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Language</a>
                 </div>
             </div>
+        </div>
+    </header>
 
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide" id="vid1"></div>
-                    <div class="swiper-slide" id="vid2"></div>
-                    <div class="swiper-slide" id="vid3"></div>
-                    <div class="swiper-slide" id="vid4"></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>            
-                
-                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-                <script src="main.js"></script>
-
+    <section class="home">
+        <video class="img-slide active" src="navbar_vid/wedding_by_the_beach.mp4" autoplay muted loop></video>
+        <video class="img-slide" src="navbar_vid/i_love_you.mp4" autoplay muted loop></video>
+        <video class="img-slide" src="navbar_vid/coverr_women.mp4" autoplay muted loop></video>
+        <video class="img-slide" src="navbar_vid/coverr_money.mp4" autoplay muted loop></video>
+        
+        <!-- <img class="img-slide active" src="image/weding.jpg" alt=""> -->
+        <!-- <img class="img-slide" src="image/love_you.jpg" alt="">
+        <img class="img-slide" src="image/womens.jpg" alt="">
+        <img class="img-slide" src="image/money.jpg" alt=""> -->
+        
+        <div class="content active">
+            <h1>March. Chat. <br><span>Date.</span></h1>
+            <p>With 70+ billion matches to date, Mistery acquaintance® <br> is the top free dating app,
+                and the best place to meet new <br> people. Are you looking for true love? 
+                An open relationship? <br> Are you looking to get out there and find a date, 
+                or do you <br> just want to make friends and chat? With Mistery acquaintance,<br>  
+                you can meet local people everywhere and get the best out of <br> your dating experience.</p>
+                <a href="#">Sing up <i class="fa-solid fa-address-card"></i></a>
+        </div>
+        <div class="content">
+            <h1>Find your love.</h1>
+            <p>With 70+ billion matches to date, Mistery acquaintance® <br> is the top free dating app,
+                and the best place to meet new <br> people. Are you looking for true love? 
+                An open relationship? <br> Are you looking to get out there and find a date, 
+                or do you <br> just want to make friends and chat? With Mistery acquaintance,<br>  
+                you can meet local people everywhere and get the best out of <br> your dating experience.</p>
+                <a href="#">Sing up <i class="fa-solid fa-address-card"></i></a>
+        </div>
+        <div class="content">
+            <h1>Same-sex unions</h1>
+            <p>With 70+ billion matches to date, Mistery acquaintance® <br> is the top free dating app,
+                and the best place to meet new <br> people. Are you looking for true love? 
+                An open relationship? <br> Are you looking to get out there and find a date, 
+                or do you <br> just want to make friends and chat? With Mistery acquaintance,<br>  
+                you can meet local people everywhere and get the best out of <br> your dating experience.</p>
+                <a href="#">Sing up <i class="fa-solid fa-address-card"></i></a>
+        </div>
+        <div class="content">
+            <h1>Money cant buy love.</h1>
+            <p>With 70+ billion matches to date, Mistery acquaintance® <br> is the top free dating app,
+                and the best place to meet new <br> people. Are you looking for true love? 
+                An open relationship? <br> Are you looking to get out there and find a date, 
+                or do you <br> just want to make friends and chat? With Mistery acquaintance,<br>  
+                you can meet local people everywhere and get the best out of <br> your dating experience.</p>
+                <a href="#">Sing up <i class="fa-solid fa-address-card"></i></a>
+        </div>
+        
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
 
-        
-        
-</body>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
 
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
 </html>
