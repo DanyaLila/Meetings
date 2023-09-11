@@ -65,15 +65,14 @@ img {
 
 .btn-get-started {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     padding: 15px;
-    border: 0px solid black;
+    border: 0px solid rgb(177, 177, 177);
     border-radius: 50px;
-    background-color: #F2F4F7;
+    background-color: rgb(6, 96, 152);
     transition: all 0.3s ease-in;
     margin: auto;
-    box-shadow: 3px 2px 1px;
 }
 
 .btn-get-started:hover {
@@ -93,6 +92,10 @@ img {
 
 .header-main-content {
     margin: auto;
+    height: 300px;
+    width: 550px;
+    padding: auto;
+    padding-left: 10px;
 }
 
 .title-text {
@@ -101,7 +104,7 @@ img {
 
 .header-zag h1 {
     font-weight: 800;
-    font-size: 46px;
+    font-size: 40px;
 }
 .header-zag p {
     font-weight: 600;
@@ -113,6 +116,7 @@ img {
 .swiper {
     width: 50%;
     height: 80%;
+    border-radius: 20px;
   }
 
   .swiper-slide {

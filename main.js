@@ -49,3 +49,10 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+// Change text
+
+function changeImage(fileName) {
+    let vid = document.querySelector("#vid1");
+    vid.setAttribute('src', fileName);
+}
