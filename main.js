@@ -87,7 +87,7 @@ var sliderNav = function(manual){
     });
 
 
-const tabs = document.querySelectorAll('.content-item');
+const tabs = document.querySelectorAll('.content-item__name');
 const content = document.querySelectorAll('.content-box');
 
 const changeClass = el => {
@@ -112,7 +112,7 @@ tabs.forEach(item => {
     });
 });
 
-let tabOne = document.querySelector('.content-item').click();
+let tabOne = document.querySelector('.content-item__name').click();
 
 const buttons = document.querySelectorAll('.works__tab');
 const contentBtn = document.querySelectorAll('.works__content-box');

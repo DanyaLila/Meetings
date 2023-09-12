@@ -397,22 +397,19 @@ section{
     min-height: 416px;
 }
 
-.content-item {
+.content-item__holder p {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 8px;
-    padding-top: 20px;
-    padding-right: 20px;
+    padding: 20px;
     border: 0px solid;
     border-radius: 40px;
     background-color: #09a6d4;
     color: #fff;
     transition: 0.3s ease;
 }
-
-.content-item:hover{
+.content-item__holder p:hover{
     background-color: #fff;
     color: #09a6d4;
     box-shadow: 0 0 6px 2px;
@@ -435,6 +432,7 @@ section{
     font-weight: 600;
     font-size: 22px;
     line-height: 140%;
+    text-transform: uppercase;
 }
 
 .content-box {
@@ -448,11 +446,12 @@ section{
     border-radius: 30px;
 }
 
-.content-item.active {
+.content-item__holder p.active{
     background-color: #fff;
     color: #09a6d4;
     box-shadow: 0 0 6px 2px;
 }
+
 
 .content-box.active {
     display: block;
