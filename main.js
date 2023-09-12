@@ -83,5 +83,58 @@ var sliderNav = function(manual){
     btns.forEach((btn, i) => {
         btn.addEventListener("click", () => {
             sliderNav(i)
-        })
+        });
+    });
+
+
+const tabs = document.querySelectorAll('.content-item');
+const content = document.querySelectorAll('.content-box');
+
+const changeClass = el => {
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active');
+    }
+    el.classList.add('active');
+}
+
+tabs.forEach(item => {
+    item.addEventListener('click', e => {
+        const currTab = e.currentTarget.dataset.btn;
+        console.log(e.target)
+
+        changeClass(e.currentTarget)
+        for (i = 0; i < content.length; i++) {
+            content[i].classList.remove('active');
+            if (content[i].dataset.content === currTab) {
+                content[i].classList.add('active')
+            }
+        }
     })
+})
+
+let tabOne = document.querySelector('.content-item').click();
+
+const buttons = document.querySelectorAll('.works__tab');
+const contentBtn = document.querySelectorAll('.works__content-box');
+
+const changeBtn = elem => {
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('active')
+    }
+    elem.classList.add('active');
+}
+
+buttons.forEach(item => {
+    item.addEventListener('click', e => {
+        const currentTab = e.target.dataset.id;
+        changeBtn(e.target)
+        for (i = 0; i < contentBtn.length; i++) {
+            contentBtn[i].classList.remove('active');
+            if (contentBtn[i].dataset.box === currentTab) {
+                contentBtn[i].classList.add('active')
+            }
+        }
+    })
+});
+
+document.querySelector('.works__tab').click();
